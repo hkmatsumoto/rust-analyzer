@@ -54,7 +54,7 @@ impl ImportPath {
 /// to be prepended to the `ModPath` before the path is valid.
 #[derive(Default)]
 pub struct ImportMap {
-    map: FxIndexMap<ItemInNs, ImportInfo>,
+    pub map: FxIndexMap<ItemInNs, ImportInfo>,
 
     /// List of keys stored in `map`, sorted lexicographically by their `ModPath`. Indexed by the
     /// values returned by running `fst`.
